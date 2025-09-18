@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/HeaderToggle.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__logo">AUTUMN</h1>
+
+        <button class="header__toggle open" aria-label="메뉴 오픈">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24">
+	            <path fill="#434343" d="M2.61 0h22.431a2.61 2.61 0 1 1 0 5.22H2.61a2.61 2.61 0 1 1 0-5.22m0 9.39h22.431a2.61 2.61 0 1 1 0 5.22H2.61a2.61 2.61 0 1 1 0-5.22m0 9.391h22.431a2.61 2.61 0 1 1 0 5.22H2.61a2.61 2.61 0 1 1 0-5.22" />
+            </svg>
+        </button>
+
+        <button class="header__toggle close" style="display: none;" aria-label="메뉴 닫기">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 24 24">
+	            <path fill="#434343" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" />
+            </svg>
+        </button>
+
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section1" id="section1">
+            <h1 class="section1__title">HELLO AUTUMN</h1>
+            <p class="section1__title2">How will you spend your time this fall?</p>
+            <p class="section1__title3">이번 가을은 어떤 시간을 보내실건가요?</p>
+
+            
+            <svg class="bird" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#202020" d="m23 11.5l-3.05-1.13c-.26-1.15-.91-1.81-.91-1.81a4.19 4.19 0 0 0-5.93 0l-1.48 1.48L5 3c-1 4 0 8 2.45 11.22L2 19.5s8.89 2 14.07-2.05c2.76-2.16 3.38-3.42 3.77-4.75zm-5.29.22c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0s.39 1.02 0 1.41" /></svg>
+            <svg class="bird" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#202020" d="m23 11.5l-3.05-1.13c-.26-1.15-.91-1.81-.91-1.81a4.19 4.19 0 0 0-5.93 0l-1.48 1.48L5 3c-1 4 0 8 2.45 11.22L2 19.5s8.89 2 14.07-2.05c2.76-2.16 3.38-3.42 3.77-4.75zm-5.29.22c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0s.39 1.02 0 1.41" /></svg>
+            <svg class="bird" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#202020" d="m23 11.5l-3.05-1.13c-.26-1.15-.91-1.81-.91-1.81a4.19 4.19 0 0 0-5.93 0l-1.48 1.48L5 3c-1 4 0 8 2.45 11.22L2 19.5s8.89 2 14.07-2.05c2.76-2.16 3.38-3.42 3.77-4.75zm-5.29.22c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0s.39 1.02 0 1.41" /></svg>
+            <svg class="bird" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#202020" d="m23 11.5l-3.05-1.13c-.26-1.15-.91-1.81-.91-1.81a4.19 4.19 0 0 0-5.93 0l-1.48 1.48L5 3c-1 4 0 8 2.45 11.22L2 19.5s8.89 2 14.07-2.05c2.76-2.16 3.38-3.42 3.77-4.75zm-5.29.22c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0s.39 1.02 0 1.41" /></svg>
+            <svg class="bird" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#202020" d="m23 11.5l-3.05-1.13c-.26-1.15-.91-1.81-.91-1.81a4.19 4.19 0 0 0-5.93 0l-1.48 1.48L5 3c-1 4 0 8 2.45 11.22L2 19.5s8.89 2 14.07-2.05c2.76-2.16 3.38-3.42 3.77-4.75zm-5.29.22c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0s.39 1.02 0 1.41" /></svg>
+            <svg class="bird" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#202020" d="m23 11.5l-3.05-1.13c-.26-1.15-.91-1.81-.91-1.81a4.19 4.19 0 0 0-5.93 0l-1.48 1.48L5 3c-1 4 0 8 2.45 11.22L2 19.5s8.89 2 14.07-2.05c2.76-2.16 3.38-3.42 3.77-4.75zm-5.29.22c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0s.39 1.02 0 1.41" /></svg>
+            <svg class="bird" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="#202020" d="m23 11.5l-3.05-1.13c-.26-1.15-.91-1.81-.91-1.81a4.19 4.19 0 0 0-5.93 0l-1.48 1.48L5 3c-1 4 0 8 2.45 11.22L2 19.5s8.89 2 14.07-2.05c2.76-2.16 3.38-3.42 3.77-4.75zm-5.29.22c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0s.39 1.02 0 1.41" /></svg>
+
+            <img class="section1__tree1" src="/images/숲1.png" alt="숲">
+            <img class="section1__tree2" src="/images/숲1.png" alt="숲">
+            <img class="section1__tree3" src="/images/숲1.png" alt="숲">
+            <img class="section1__tree4" src="/images/숲1.png" alt="숲">
+            <img class="section1__tree5" src="/images/숲1.png" alt="숲">
+            <img class="section1__tree6" src="/images/숲1.png" alt="숲">
+            <img class="section1__tree7" src="/images/숲1.png" alt="숲">
+            <img class="section1__tree8" src="/images/숲1.png" alt="숲">
+            <img class="section1__tree9" src="/images/숲1.png" alt="숲">
+            <img class="section1__tree10" src="/images/숲1.png" alt="숲">
+
+            <div class="section1__circle1"></div>
+            <div class="section1__circle2"></div>   
+            <div class="section1__circle3"></div>
+            <div class="section1__circle4"></div>
+            <div class="section1__circle5"></div>
+        </section>
+
+        <section class="section2" id="section2">
+            <svg width="2000" height="200">
+                <path d="M 0 100 L 2000 100" stroke="#e7dacc" fill="transparent" stroke-width="1"/>
+            </svg>
+        </section>
+
+        <section id="section3">
+            <h1>Section 3</h1>
+            <p>This is the third section of the landing page.</p>
+        </section>
+        <section id="section4">
+            <h1>Section 4</h1>
+            <p>This is the fourth section of the landing page.</p>
+        </section>    
+    </main>
+
+    <footer class="footer">
+        <h1 class="footer__title">footer</h1>
+    </footer>
+</body>
+</html>

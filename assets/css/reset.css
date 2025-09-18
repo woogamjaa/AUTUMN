@@ -1,0 +1,124 @@
+/* reset.css */
+/* 퍼블리셔 / 에이전시용 기본 초기화 CSS */
+/* Author: 너의 이름 또는 팀명 */
+/* 기반: modern reset + HTML5 요소 + 접근성 고려 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 elements display block in older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* Universal box-sizing */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Body 기본 설정 */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  /* 사용자 정의 폰트, 기본 텍스트 색상 지정은 여기 혹은 후속 스타일에서 */
+  background: #fff;
+  color: #333;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* 기본 링크 스타일 제거 / 정돈 */
+a {
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* 이미지, 미디어 요소 반응형 처리 */
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 목록 기본 스타일 제거 */
+ol, ul {
+  list-style: none;
+}
+
+/* 테이블 기본 속성 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 폼 요소 기본 조정 */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* 숨김 요소 접근성 고려 */
+[hidden] {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* 특수 요소 기본값 */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+

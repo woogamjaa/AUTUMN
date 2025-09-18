@@ -1,0 +1,422 @@
+@charset "UTF-8";
+@keyframes fly {
+  0% {
+    transform: translate(-100vw, 0) scale(1) rotate(-5deg);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(20vw, -10vh) scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: translate(100vw, 20vh) scale(1.2) rotate(-5deg);
+    opacity: 1;
+  }
+}
+@keyframes sun {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.section1 {
+  background-color: rgb(231, 218, 204);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.section1__circle1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 0.5px solid #202020;
+  z-index: 1000;
+  animation: sun 3s ease-in infinite;
+  animation-delay: 0s;
+}
+.section1__circle2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: 0.5px solid #202020;
+  z-index: 1000;
+  animation: sun 3s ease-in infinite;
+  animation-delay: 1s;
+}
+.section1__circle3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  border: 0.5px solid #202020;
+  z-index: 1000;
+  animation: sun 3s ease-in infinite;
+  animation-delay: 2s;
+}
+.section1__circle4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: 0.5px solid #202020;
+  z-index: 1000;
+  animation: sun 3s ease-in infinite;
+  animation-delay: 3s;
+}
+.section1__circle5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60rem;
+  height: 60rem;
+  border-radius: 50%;
+  border: 0.5px solid #202020;
+  z-index: 1000;
+  animation: sun 3s ease-in infinite;
+  animation-delay: 4s;
+}
+.section1__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.section1__video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(37, 37, 37); /* 반투명한 검은색 필터 */
+  z-index: 1; /* 영상 위에 위치하도록 설정 */
+}
+.section1__title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10vw;
+  color: #202020;
+  font-weight: 900;
+  white-space: nowrap;
+  z-index: 1001;
+}
+.section1__title2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #202020;
+  font-weight: 300;
+  white-space: nowrap;
+  z-index: 1001;
+}
+.section1__title3 {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #202020;
+  font-weight: 300;
+  white-space: nowrap;
+  z-index: 1001;
+}
+.section1 .bird {
+  position: absolute;
+  width: 12px;
+  height: auto;
+  animation: fly 20s linear infinite;
+  left: -1vw;
+}
+.section1 .bird:nth-child(1) {
+  animation-delay: 2s;
+  animation-duration: 12s;
+  top: 51vh;
+}
+.section1 .bird:nth-child(2) {
+  animation-delay: 6s;
+  animation-duration: 14s;
+  top: 78vh;
+}
+.section1 .bird:nth-child(3) {
+  animation-delay: 2s;
+  animation-duration: 11s;
+  top: 72vh;
+}
+.section1 .bird:nth-child(4) {
+  animation-delay: 4s;
+  animation-duration: 10s;
+  top: 46vh;
+}
+.section1 .bird:nth-child(5) {
+  animation-delay: 4s;
+  animation-duration: 12s;
+  top: 58vh;
+}
+.section1 .bird:nth-child(6) {
+  animation-delay: 4s;
+  animation-duration: 15s;
+  top: 24vh;
+}
+.section1 .bird:nth-child(7) {
+  animation-delay: 6s;
+  animation-duration: 13s;
+  top: 75vh;
+}
+.section1 .bird:nth-child(8) {
+  animation-delay: 3s;
+  animation-duration: 10s;
+  top: 49vh;
+}
+.section1 .bird:nth-child(9) {
+  animation-delay: 6s;
+  animation-duration: 10s;
+  top: 14vh;
+}
+.section1 .bird:nth-child(10) {
+  animation-delay: 5s;
+  animation-duration: 10s;
+  top: 15vh;
+}
+.section1__tree1 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  width: 40rem;
+  height: 20rem;
+  z-index: 1001;
+}
+.section1__tree2 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  width: 35rem;
+  height: 20rem;
+  z-index: 1001;
+}
+.section1__tree3 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  width: 40rem;
+  height: 20rem;
+  z-index: 1001;
+}
+.section1__tree4 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  width: 35rem;
+  height: 20rem;
+  z-index: 1001;
+}
+.section1__tree5 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  width: 40rem;
+  height: 20rem;
+  z-index: 1001;
+}
+.section1__tree6 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 52%;
+  width: 35rem;
+  height: 20rem;
+  z-index: 1001;
+}
+.section1__tree7 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 68%;
+  width: 40rem;
+  height: 20rem;
+  z-index: 1001;
+}
+.section1__tree8 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  width: 35rem;
+  height: 20rem;
+  z-index: 1001;
+}
+.section1__tree9 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  width: 40rem;
+  height: 20rem;
+  z-index: 1001;
+}
+.section1__tree10 {
+  background-color: transparent;
+  position: absolute;
+  top: 70%;
+  left: -8%;
+  width: 35rem;
+  height: 20rem;
+  z-index: 1001;
+}
+
+.section2 {
+  background-color: #000000;
+  position: relative;
+  width: 100%;
+  min-height: 130vh;
+  overflow: hidden;
+}
+.section2__mapple1 {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  opacity: 0.8;
+}
+.section2__mapple2 {
+  position: absolute;
+  top: 54%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  opacity: 0.8;
+}
+.section2__mapple3 {
+  position: absolute;
+  top: 56%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  opacity: 0.8;
+}
+.section2__mapple4 {
+  position: absolute;
+  top: 58%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  opacity: 0.8;
+}
+.section2__mapple5 {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  opacity: 0.8;
+}
+
+#section3 {
+  border: 1px solid red;
+}
+
+#section4 {
+  border: 1px solid red;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem 1rem 2rem;
+  z-index: 1000;
+}
+.header__logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #202020;
+}
+.header__toggle {
+  z-index: 1100;
+}
+.header__nav {
+  position: fixed;
+  top: 10;
+  right: -100%;
+  z-index: 1000;
+  opacity: 0;
+  transition: right 0.5s ease-in-out, opacity 0.6s ease-in-out;
+}
+.header__nav.active {
+  right: 5rem;
+  opacity: 1;
+}
+.header__nav-list {
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  gap: 1rem;
+  color: #202020;
+}
+
+@font-face {
+  font-family: "AjwolahnSsnv"; /* 폰트의 이름을 정의합니다. 원하는 이름으로 지정할 수 있습니다. */
+  src: url("../fonts/AjwolahnSsnvB7x4VkXxBgx-uvvc.ttf") format("truetype");
+  /* 폰트 파일의 경로를 정확하게 지정합니다. 
+     _header.scss 등 다른 파일에서 사용할 경우 경로가 달라질 수 있습니다.
+     (예: '../../fonts/AjwolahnSsnvB7x4VkXxBgx-uvvc.ttf')
+  */
+  font-weight: normal; /* 폰트의 굵기를 지정합니다. */
+  font-style: normal; /* 폰트의 스타일(기울임 등)을 지정합니다. */
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "AjwolahnSsnv", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */

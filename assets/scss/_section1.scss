@@ -1,0 +1,286 @@
+@use 'sass:math';
+
+@keyframes fly {
+    0% {
+        transform: translate(-100vw, 0) scale(1) rotate(-5deg); // 화면 왼쪽 밖에서 시작
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translate(20vw, -10vh) scale(1.1) rotate(5deg);
+    }
+    100% {
+        transform: translate(100vw, 20vh) scale(1.2) rotate(-5deg); // 화면 오른쪽 밖으로 이동
+        opacity: 1;
+    }
+}
+
+
+@keyframes sun {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.section1{
+    background-color: rgb(231, 218, 204);
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    
+    &__circle1 { // <- 여기에 '&' 추가
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        border: 0.5px solid #202020;
+        z-index: 1000;
+
+        animation: sun 3s ease-in infinite;
+        animation-delay: 0s;
+    }
+    &__circle2 { // <- 여기에 '&' 추가
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+        border: 0.5px solid #202020;
+        z-index: 1000;
+        
+        animation: sun 3s ease-in infinite;
+        animation-delay: 1s;
+    }
+    &__circle3 { // <- 여기에 '&' 추가
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40rem;
+        height: 40rem;
+        border-radius: 50%;
+        border: 0.5px solid #202020;
+        z-index: 1000;
+
+        animation: sun 3s ease-in infinite;
+        animation-delay: 2s;
+    }
+    &__circle4 { // <- 여기에 '&' 추가
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50rem;
+        height: 50rem;
+        border-radius: 50%;
+        border: 0.5px solid #202020;
+        z-index: 1000;
+
+        animation: sun 3s ease-in infinite;
+        animation-delay: 3s;
+    }
+    &__circle5 { // <- 여기에 '&' 추가
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60rem;
+        height: 60rem;
+        border-radius: 50%;
+        border: 0.5px solid #202020;
+        z-index: 1000;
+
+        animation: sun 3s ease-in infinite;
+        animation-delay: 4s;
+    }
+
+
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(37, 37, 37, 1.0); /* 반투명한 검은색 필터 */
+            z-index: 1; /* 영상 위에 위치하도록 설정 */
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10vw; 
+        color: #202020;
+        font-weight: 900;
+        white-space: nowrap;
+        z-index: 1001;
+    }
+    
+    &__title2 {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem; 
+        color: #202020;
+        font-weight: 300;
+        white-space: nowrap;
+        z-index: 1001;
+    }
+
+    &__title3 {
+        position: absolute;
+        top: 61%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem; 
+        color: #202020;
+        font-weight: 300;
+        white-space: nowrap;
+        z-index: 1001;
+    }
+
+    .bird {
+        position: absolute;
+        width: 12px; // 기본 크기
+        height: auto;
+        animation: fly 20s linear infinite;
+        left: -1vw; 
+    }
+
+    @for $i from 1 through 10 { // HTML에 있는 10마리의 새에 적용
+        .bird:nth-child(#{$i}) {
+            // 1부터 10 사이의 랜덤 딜레이 (초)
+            $delay: math.round(math.random() * 5) + 1;
+            
+            // 10부터 20 사이의 랜덤 속도 (초)
+            $duration: math.round(math.random() * 5) + 10;
+            
+            // 10% ~ 80% 사이의 랜덤 Y축 위치
+            $position-y: math.round(math.random() * 70) + 10;
+            
+            animation-delay: #{$delay}s;
+            animation-duration: #{$duration}s;
+            top: #{$position-y}vh;
+        }
+    }
+    
+    &__tree1{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left:0%;
+        width: 40rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+    &__tree2{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left:10%;
+        width: 35rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+    &__tree3{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left: 20%;
+        width: 40rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+    &__tree4{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        width: 35rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+    &__tree5{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left: 40%;
+        width: 40rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+    &__tree6{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left: 52%;
+        width: 35rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+    &__tree7{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left: 68%;
+        width: 40rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+    &__tree8{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left: 70%;
+        width: 35rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+    &__tree9{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left: 80%;
+        width: 40rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+    &__tree10{
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left: -8%;
+        width: 35rem;
+        height: 20rem;
+        z-index: 1001;
+    }
+}
+

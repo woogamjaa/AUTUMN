@@ -8,6 +8,9 @@
     10% {
         opacity: 1;
     }
+    20%{
+        opacity: 1;
+    }
     50% {
         transform: translate(20vw, -10vh) scale(1.1) rotate(5deg);
     }
@@ -38,7 +41,7 @@
     min-height: 100vh;
     overflow: hidden;
     
-    &__circle1 { // <- 여기에 '&' 추가
+    &__circle1 { 
         position: absolute;
         top: 50%;
         left: 50%;
@@ -52,7 +55,7 @@
         animation: sun 3s ease-in infinite;
         animation-delay: 0s;
     }
-    &__circle2 { // <- 여기에 '&' 추가
+    &__circle2 {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -66,7 +69,7 @@
         animation: sun 3s ease-in infinite;
         animation-delay: 1s;
     }
-    &__circle3 { // <- 여기에 '&' 추가
+    &__circle3 {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -80,7 +83,7 @@
         animation: sun 3s ease-in infinite;
         animation-delay: 2s;
     }
-    &__circle4 { // <- 여기에 '&' 추가
+    &__circle4 { 
         position: absolute;
         top: 50%;
         left: 50%;
@@ -94,7 +97,7 @@
         animation: sun 3s ease-in infinite;
         animation-delay: 3s;
     }
-    &__circle5 { // <- 여기에 '&' 추가
+    &__circle5 { 
         position: absolute;
         top: 50%;
         left: 50%;
@@ -119,6 +122,11 @@
         font-weight: 900;
         white-space: nowrap;
         z-index: 1001;
+        @media (max-width: 425px){
+            top: 40%;
+            left:50%;
+    
+        }
     }
     
     &__title2 {
@@ -132,7 +140,7 @@
         white-space: nowrap;
         z-index: 1001;
         @media (max-width: 425px){
-            top: 42%;
+            top: 46%;
             left:50%;
             font-size: 0.9rem; 
         }
@@ -149,7 +157,7 @@
         white-space: nowrap;
         z-index: 1001;
         @media (max-width: 425px){
-            top: 45%;
+            top: 50%;
             left:50%;
             font-size: 0.9rem; 
         }
@@ -162,7 +170,7 @@
         animation: fly 20s linear infinite;
         left: -1vw; 
         @media (max-width: 425px){
-            left:-5vw;
+            left:-4vw;
         }
     }
 

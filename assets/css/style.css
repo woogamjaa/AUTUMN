@@ -7,6 +7,9 @@
   10% {
     opacity: 1;
   }
+  20% {
+    opacity: 1;
+  }
   50% {
     transform: translate(20vw, -10vh) scale(1.1) rotate(5deg);
   }
@@ -109,6 +112,12 @@
   white-space: nowrap;
   z-index: 1001;
 }
+@media (max-width: 425px) {
+  .section1__title {
+    top: 40%;
+    left: 50%;
+  }
+}
 .section1__title2 {
   position: absolute;
   top: 55%;
@@ -122,7 +131,7 @@
 }
 @media (max-width: 425px) {
   .section1__title2 {
-    top: 42%;
+    top: 46%;
     left: 50%;
     font-size: 0.9rem;
   }
@@ -140,7 +149,7 @@
 }
 @media (max-width: 425px) {
   .section1__title3 {
-    top: 45%;
+    top: 50%;
     left: 50%;
     font-size: 0.9rem;
   }
@@ -154,58 +163,58 @@
 }
 @media (max-width: 425px) {
   .section1 .bird {
-    left: -5vw;
+    left: -4vw;
   }
 }
 .section1 .bird:nth-child(1) {
-  animation-delay: 2s;
-  animation-duration: 11s;
-  top: 77vh;
+  animation-delay: 1s;
+  animation-duration: 12s;
+  top: 70vh;
 }
 .section1 .bird:nth-child(2) {
   animation-delay: 4s;
-  animation-duration: 12s;
-  top: 53vh;
+  animation-duration: 15s;
+  top: 55vh;
 }
 .section1 .bird:nth-child(3) {
-  animation-delay: 4s;
+  animation-delay: 1s;
   animation-duration: 13s;
-  top: 43vh;
+  top: 54vh;
 }
 .section1 .bird:nth-child(4) {
-  animation-delay: 1s;
-  animation-duration: 10s;
-  top: 40vh;
+  animation-delay: 5s;
+  animation-duration: 15s;
+  top: 39vh;
 }
 .section1 .bird:nth-child(5) {
   animation-delay: 6s;
-  animation-duration: 12s;
-  top: 34vh;
+  animation-duration: 13s;
+  top: 20vh;
 }
 .section1 .bird:nth-child(6) {
-  animation-delay: 4s;
-  animation-duration: 11s;
-  top: 44vh;
+  animation-delay: 5s;
+  animation-duration: 13s;
+  top: 52vh;
 }
 .section1 .bird:nth-child(7) {
-  animation-delay: 2s;
-  animation-duration: 12s;
-  top: 41vh;
+  animation-delay: 5s;
+  animation-duration: 11s;
+  top: 34vh;
 }
 .section1 .bird:nth-child(8) {
-  animation-delay: 2s;
-  animation-duration: 14s;
-  top: 55vh;
-}
-.section1 .bird:nth-child(9) {
-  animation-delay: 4s;
-  animation-duration: 14s;
-  top: 35vh;
-}
-.section1 .bird:nth-child(10) {
   animation-delay: 3s;
   animation-duration: 11s;
-  top: 70vh;
+  top: 74vh;
+}
+.section1 .bird:nth-child(9) {
+  animation-delay: 5s;
+  animation-duration: 14s;
+  top: 33vh;
+}
+.section1 .bird:nth-child(10) {
+  animation-delay: 2s;
+  animation-duration: 13s;
+  top: 39vh;
 }
 .section1__tree1 {
   background-color: transparent;
@@ -358,51 +367,6 @@
   width: 100%;
   min-height: 130vh;
   overflow: hidden;
-}
-.section2__mapple1 {
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30rem;
-  height: 30rem;
-  opacity: 0.8;
-}
-.section2__mapple2 {
-  position: absolute;
-  top: 54%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  width: 30rem;
-  height: 30rem;
-  opacity: 0.8;
-}
-.section2__mapple3 {
-  position: absolute;
-  top: 56%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  width: 30rem;
-  height: 30rem;
-  opacity: 0.8;
-}
-.section2__mapple4 {
-  position: absolute;
-  top: 58%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  width: 30rem;
-  height: 30rem;
-  opacity: 0.8;
-}
-.section2__mapple5 {
-  position: absolute;
-  top: 60%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  width: 30rem;
-  height: 30rem;
-  opacity: 0.8;
 }
 
 #section3 {

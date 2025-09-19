@@ -153,6 +153,11 @@
         font-weight: 300;
         white-space: nowrap;
         z-index: 1001;
+        @media (max-width: 425px){
+            top: 42%;
+            left:50%;
+            font-size: 0.9rem; 
+        }
     }
 
     &__title3 {
@@ -165,6 +170,11 @@
         font-weight: 300;
         white-space: nowrap;
         z-index: 1001;
+        @media (max-width: 425px){
+            top: 45%;
+            left:50%;
+            font-size: 0.9rem; 
+        }
     }
 
     .bird {
@@ -173,6 +183,9 @@
         height: auto;
         animation: fly 20s linear infinite;
         left: -1vw; 
+        @media (max-width: 425px){
+            left:-5vw;
+        }
     }
 
     @for $i from 1 through 10 { // HTML에 있는 10마리의 새에 적용
@@ -200,6 +213,10 @@
         width: 40rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            top: 68%;
+            left:-20%;
+        }
     }
     &__tree2{
         background-color: transparent;
@@ -209,6 +226,10 @@
         width: 35rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            top: 75%;
+            left:-5%;
+        }
     }
     &__tree3{
         background-color: transparent;
@@ -218,6 +239,10 @@
         width: 40rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            top: 70%;
+            left:10%;
+        }
     }
     &__tree4{
         background-color: transparent;
@@ -227,6 +252,10 @@
         width: 35rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            top: 70%;
+            left:25%;
+        }
     }
     &__tree5{
         background-color: transparent;
@@ -236,6 +265,9 @@
         width: 40rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            display: none;
+        }
     }
     &__tree6{
         background-color: transparent;
@@ -245,6 +277,9 @@
         width: 35rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            display: none;
+        }
     }
     &__tree7{
         background-color: transparent;
@@ -254,6 +289,9 @@
         width: 40rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            display: none;
+        }
     }
     &__tree8{
         background-color: transparent;
@@ -263,6 +301,9 @@
         width: 35rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            display: none;
+        }
     }
     &__tree9{
         background-color: transparent;
@@ -272,6 +313,9 @@
         width: 40rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            display: none;
+        }
     }
     &__tree10{
         background-color: transparent;
@@ -281,6 +325,9 @@
         width: 35rem;
         height: 20rem;
         z-index: 1001;
+        @media (max-width: 425px){
+            display: none;
+        }
     }
 }
 

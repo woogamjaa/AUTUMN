@@ -139,6 +139,13 @@
   white-space: nowrap;
   z-index: 1001;
 }
+@media (max-width: 425px) {
+  .section1__title2 {
+    top: 42%;
+    left: 50%;
+    font-size: 0.9rem;
+  }
+}
 .section1__title3 {
   position: absolute;
   top: 61%;
@@ -150,6 +157,13 @@
   white-space: nowrap;
   z-index: 1001;
 }
+@media (max-width: 425px) {
+  .section1__title3 {
+    top: 45%;
+    left: 50%;
+    font-size: 0.9rem;
+  }
+}
 .section1 .bird {
   position: absolute;
   width: 12px;
@@ -157,55 +171,60 @@
   animation: fly 20s linear infinite;
   left: -1vw;
 }
+@media (max-width: 425px) {
+  .section1 .bird {
+    left: -5vw;
+  }
+}
 .section1 .bird:nth-child(1) {
-  animation-delay: 2s;
+  animation-delay: 5s;
   animation-duration: 12s;
-  top: 51vh;
+  top: 36vh;
 }
 .section1 .bird:nth-child(2) {
-  animation-delay: 6s;
+  animation-delay: 4s;
   animation-duration: 14s;
-  top: 78vh;
-}
-.section1 .bird:nth-child(3) {
-  animation-delay: 2s;
-  animation-duration: 11s;
   top: 72vh;
 }
-.section1 .bird:nth-child(4) {
-  animation-delay: 4s;
+.section1 .bird:nth-child(3) {
+  animation-delay: 6s;
   animation-duration: 10s;
-  top: 46vh;
+  top: 73vh;
+}
+.section1 .bird:nth-child(4) {
+  animation-delay: 2s;
+  animation-duration: 15s;
+  top: 38vh;
 }
 .section1 .bird:nth-child(5) {
-  animation-delay: 4s;
-  animation-duration: 12s;
-  top: 58vh;
+  animation-delay: 6s;
+  animation-duration: 11s;
+  top: 77vh;
 }
 .section1 .bird:nth-child(6) {
   animation-delay: 4s;
-  animation-duration: 15s;
-  top: 24vh;
+  animation-duration: 10s;
+  top: 34vh;
 }
 .section1 .bird:nth-child(7) {
-  animation-delay: 6s;
-  animation-duration: 13s;
-  top: 75vh;
+  animation-delay: 3s;
+  animation-duration: 11s;
+  top: 50vh;
 }
 .section1 .bird:nth-child(8) {
   animation-delay: 3s;
-  animation-duration: 10s;
-  top: 49vh;
+  animation-duration: 13s;
+  top: 63vh;
 }
 .section1 .bird:nth-child(9) {
-  animation-delay: 6s;
-  animation-duration: 10s;
-  top: 14vh;
+  animation-delay: 5s;
+  animation-duration: 12s;
+  top: 76vh;
 }
 .section1 .bird:nth-child(10) {
-  animation-delay: 5s;
-  animation-duration: 10s;
-  top: 15vh;
+  animation-delay: 3s;
+  animation-duration: 12s;
+  top: 35vh;
 }
 .section1__tree1 {
   background-color: transparent;
@@ -216,6 +235,12 @@
   height: 20rem;
   z-index: 1001;
 }
+@media (max-width: 425px) {
+  .section1__tree1 {
+    top: 68%;
+    left: -20%;
+  }
+}
 .section1__tree2 {
   background-color: transparent;
   position: absolute;
@@ -224,6 +249,12 @@
   width: 35rem;
   height: 20rem;
   z-index: 1001;
+}
+@media (max-width: 425px) {
+  .section1__tree2 {
+    top: 75%;
+    left: -5%;
+  }
 }
 .section1__tree3 {
   background-color: transparent;
@@ -234,6 +265,12 @@
   height: 20rem;
   z-index: 1001;
 }
+@media (max-width: 425px) {
+  .section1__tree3 {
+    top: 70%;
+    left: 10%;
+  }
+}
 .section1__tree4 {
   background-color: transparent;
   position: absolute;
@@ -242,6 +279,12 @@
   width: 35rem;
   height: 20rem;
   z-index: 1001;
+}
+@media (max-width: 425px) {
+  .section1__tree4 {
+    top: 70%;
+    left: 25%;
+  }
 }
 .section1__tree5 {
   background-color: transparent;
@@ -252,6 +295,11 @@
   height: 20rem;
   z-index: 1001;
 }
+@media (max-width: 425px) {
+  .section1__tree5 {
+    display: none;
+  }
+}
 .section1__tree6 {
   background-color: transparent;
   position: absolute;
@@ -260,6 +308,11 @@
   width: 35rem;
   height: 20rem;
   z-index: 1001;
+}
+@media (max-width: 425px) {
+  .section1__tree6 {
+    display: none;
+  }
 }
 .section1__tree7 {
   background-color: transparent;
@@ -270,6 +323,11 @@
   height: 20rem;
   z-index: 1001;
 }
+@media (max-width: 425px) {
+  .section1__tree7 {
+    display: none;
+  }
+}
 .section1__tree8 {
   background-color: transparent;
   position: absolute;
@@ -278,6 +336,11 @@
   width: 35rem;
   height: 20rem;
   z-index: 1001;
+}
+@media (max-width: 425px) {
+  .section1__tree8 {
+    display: none;
+  }
 }
 .section1__tree9 {
   background-color: transparent;
@@ -288,6 +351,11 @@
   height: 20rem;
   z-index: 1001;
 }
+@media (max-width: 425px) {
+  .section1__tree9 {
+    display: none;
+  }
+}
 .section1__tree10 {
   background-color: transparent;
   position: absolute;
@@ -296,6 +364,11 @@
   width: 35rem;
   height: 20rem;
   z-index: 1001;
+}
+@media (max-width: 425px) {
+  .section1__tree10 {
+    display: none;
+  }
 }
 
 .section2 {

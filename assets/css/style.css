@@ -98,25 +98,6 @@
   animation: sun 3s ease-in infinite;
   animation-delay: 4s;
 }
-.section1__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-.section1__video::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(37, 37, 37); /* 반투명한 검은색 필터 */
-  z-index: 1; /* 영상 위에 위치하도록 설정 */
-}
 .section1__title {
   position: absolute;
   top: 35%;
@@ -177,54 +158,54 @@
   }
 }
 .section1 .bird:nth-child(1) {
-  animation-delay: 5s;
-  animation-duration: 12s;
-  top: 36vh;
-}
-.section1 .bird:nth-child(2) {
-  animation-delay: 4s;
-  animation-duration: 14s;
-  top: 72vh;
-}
-.section1 .bird:nth-child(3) {
-  animation-delay: 6s;
-  animation-duration: 10s;
-  top: 73vh;
-}
-.section1 .bird:nth-child(4) {
   animation-delay: 2s;
-  animation-duration: 15s;
-  top: 38vh;
-}
-.section1 .bird:nth-child(5) {
-  animation-delay: 6s;
   animation-duration: 11s;
   top: 77vh;
 }
-.section1 .bird:nth-child(6) {
+.section1 .bird:nth-child(2) {
   animation-delay: 4s;
+  animation-duration: 12s;
+  top: 53vh;
+}
+.section1 .bird:nth-child(3) {
+  animation-delay: 4s;
+  animation-duration: 13s;
+  top: 43vh;
+}
+.section1 .bird:nth-child(4) {
+  animation-delay: 1s;
   animation-duration: 10s;
+  top: 40vh;
+}
+.section1 .bird:nth-child(5) {
+  animation-delay: 6s;
+  animation-duration: 12s;
   top: 34vh;
 }
-.section1 .bird:nth-child(7) {
-  animation-delay: 3s;
+.section1 .bird:nth-child(6) {
+  animation-delay: 4s;
   animation-duration: 11s;
-  top: 50vh;
+  top: 44vh;
+}
+.section1 .bird:nth-child(7) {
+  animation-delay: 2s;
+  animation-duration: 12s;
+  top: 41vh;
 }
 .section1 .bird:nth-child(8) {
-  animation-delay: 3s;
-  animation-duration: 13s;
-  top: 63vh;
+  animation-delay: 2s;
+  animation-duration: 14s;
+  top: 55vh;
 }
 .section1 .bird:nth-child(9) {
-  animation-delay: 5s;
-  animation-duration: 12s;
-  top: 76vh;
+  animation-delay: 4s;
+  animation-duration: 14s;
+  top: 35vh;
 }
 .section1 .bird:nth-child(10) {
   animation-delay: 3s;
-  animation-duration: 12s;
-  top: 35vh;
+  animation-duration: 11s;
+  top: 70vh;
 }
 .section1__tree1 {
   background-color: transparent;
